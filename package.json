@@ -1,22 +1,33 @@
 {
   "name": "docs",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
     "start": "next start",
-    "lint": "next lint"
+    "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.15"
+    "@orama/orama": "^3.0.1",
+    "@orama/stopwords": "^3.0.1",
+    "@orama/tokenizers": "^3.0.1",
+    "fumadocs-core": "14.0.2",
+    "fumadocs-mdx": "11.0.0",
+    "fumadocs-ui": "14.0.2",
+    "lucide-react": "^0.453.0",
+    "next": "15.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/mdx": "^2.0.13",
+    "@types/node": "22.7.9",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
   }
 }
