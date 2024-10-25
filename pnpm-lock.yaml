@@ -33,8 +33,8 @@ importers:
         specifier: 14.0.2
         version: 14.0.2(@types/react@18.3.12)
       fumadocs-mdx:
-        specifier: 11.0.0
-        version: 11.0.0(acorn@8.13.0)(fumadocs-core@14.0.2(@types/react@18.3.12))(next@15.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        specifier: 11.1.0
+        version: 11.1.0(acorn@8.13.0)(fumadocs-core@14.0.2(@types/react@18.3.12))(next@15.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       fumadocs-ui:
         specifier: 14.0.2
         version: 14.0.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(next@15.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1473,8 +1473,8 @@ packages:
   fumadocs-core@14.0.2:
     resolution: {integrity: sha512-GG+uVIBthFJJAHAqFWwBvTsTeZmsHg5YYwHsTIDnpy77+ER4aogkJkeUqoBN4TrmxzG8tbLzaxCwSMtk4X5OoA==}
 
-  fumadocs-mdx@11.0.0:
-    resolution: {integrity: sha512-HF8arG+SN+Qnit4wo00YYYPlfKYpXuYcIpqnKf7E/N7TRdpuf9vq3NVNW29oTiF6x//JELgWzkcrvG9EqEv65A==}
+  fumadocs-mdx@11.1.0:
+    resolution: {integrity: sha512-rcJNWbeo0RmJnCV/e0aa2vNldiejm7ns1I85T7oR8TtHq/5ear/6W3gYfPTqRBV7VrJ7ctD8w43Ca7tPnaIKhA==}
     hasBin: true
     peerDependencies:
       fumadocs-core: ^14.0.0
@@ -3717,7 +3717,7 @@ snapshots:
       - sass
       - supports-color
 
-  fumadocs-mdx@11.0.0(acorn@8.13.0)(fumadocs-core@14.0.2(@types/react@18.3.12))(next@15.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  fumadocs-mdx@11.1.0(acorn@8.13.0)(fumadocs-core@14.0.2(@types/react@18.3.12))(next@15.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
       '@mdx-js/mdx': 3.1.0(acorn@8.13.0)
       chokidar: 4.0.1
