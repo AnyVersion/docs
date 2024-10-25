@@ -41,7 +41,11 @@ declare type Languages = keyof typeof translations;
 declare type TranslationKey = keyof AppTranslations;
 
 export function $tr(key: TranslationKey, lang?: Languages | string): string {
-	return translations[<Languages>(lang ?? "en")][key as TranslationKey] ?? key;
+	const ts = translations[<Languages>(lang ?? "en")] || translations.en;
+	if (key in ts) {
+		return ts[key as TranslationKey];
+	}
+	return key;
 }
 export function buildTr(lang: string | Languages) {
 	return (key: TranslationKey) => {
