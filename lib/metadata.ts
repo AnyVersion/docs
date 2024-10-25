@@ -24,6 +24,6 @@ export function createMetadata(override: Metadata): Metadata {
 }
 
 export const baseUrl =
-	process.env.NODE_ENV === "development" || !process.env.ZEABUR_URL
+	process.env.NODE_ENV === "development" || !process.env.ZEABUR_WEB_URL
 		? new URL("http://localhost:3000")
-		: new URL(process.env.ZEABUR_URL);
+		: new URL(process.env.ZEABUR_WEB_URL);
