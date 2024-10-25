@@ -2,8 +2,12 @@ import type {BaseLayoutProps} from "fumadocs-ui/layouts/shared";
 import {Book, Layout,} from 'lucide-react';
 import Image from 'next/image';
 import Preview from '@/public/banner.png';
+import {buildTr} from "@/lib/i18n-locales";
 
 export function getBaseOptions(lang: string): BaseLayoutProps {
+	const $tr = buildTr(lang);
+	const $url = (url: string) => `/${lang}${url}`;
+	const $docsUrl = (url: string) => $url(`/docs${url}`);
 	return {
 		i18n: true,
 		githubUrl: "https://github.com/AnyVersion",
@@ -14,8 +18,8 @@ export function getBaseOptions(lang: string): BaseLayoutProps {
 		links: [
 			{
 				type: "menu",
-				text: "Documentation",
-				url: "/docs/anydi",
+				text: $tr("doc"),
+				url: $docsUrl("/anydi"),
 				items: [
 					{
 						menu: {
@@ -35,26 +39,16 @@ export function getBaseOptions(lang: string): BaseLayoutProps {
 							className: "md:row-span-2",
 						},
 						icon: <Book />,
-						description: "Learn to use Fumadocs on your docs site.",
-						text: "Any DI",
-						url: "/docs/anydi",
+						description: $tr("anydi.desc"),
+						text: $tr("anydi"),
+						url: $docsUrl("/anydi"),
 						active: "nested-url",
 					},
 					{
 						icon: <Layout />,
-						description: "See the available layouts of Fumadocs UI.",
-						text: "Anydi React",
-						url: "/docs/anydi/react",
-						active: "nested-url",
-						menu: {
-							className: "lg:col-start-2",
-						},
-					},
-					{
-						icon: <Layout />,
-						description: "See the available layouts of Fumadocs UI.",
-						text: "Any Webpack",
-						url: "/docs/any-webpack",
+						text: $tr("anydi.react"),
+						description: $tr("anydi.react.desc"),
+						url: $docsUrl("/anydi/react"),
 						active: "nested-url",
 						menu: {
 							className: "lg:col-start-2",
@@ -62,9 +56,19 @@ export function getBaseOptions(lang: string): BaseLayoutProps {
 					},
 					{
 						icon: <Layout />,
-						description: "See the available layouts of Fumadocs UI.",
-						text: "Elecpack",
-						url: "/docs/elecpack",
+						text: $tr("any-webpack"),
+						description: $tr("any-webpack.desc"),
+						url: $docsUrl("/any-webpack"),
+						active: "nested-url",
+						menu: {
+							className: "lg:col-start-2",
+						},
+					},
+					{
+						icon: <Layout />,
+						text: $tr("elecpack"),
+						description: $tr("elecpack.desc"),
+						url: $docsUrl("/elecpack"),
 						active: "nested-url",
 						menu: {
 							className: "lg:col-start-3 lg:row-start-1",
@@ -72,9 +76,9 @@ export function getBaseOptions(lang: string): BaseLayoutProps {
 					},
 					{
 						icon: <Layout />,
-						description: "See the available layouts of Fumadocs UI.",
-						text: "Elecpack RPC",
-						url: "/docs/elecpack/rpc",
+						text: $tr("elecpack.rpc"),
+						description: $tr("elecpack.rpc.desc"),
+						url: $docsUrl("/elecpack/rpc"),
 						active: "nested-url",
 						menu: {
 							className: "lg:col-start-3",
