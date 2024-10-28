@@ -1,4 +1,4 @@
-import type {I18nProvider} from "fumadocs-ui/i18n";
+import type { I18nProvider } from "fumadocs-ui/i18n";
 
 declare type Props = Parameters<typeof I18nProvider>[0];
 declare type Locales = NonNullable<Props["locales"]>;
@@ -7,15 +7,21 @@ declare type Translations = NonNullable<Props["translations"]>;
 const baseTranslation = {
 	doc: "Documentation",
 	"any-webpack": "Any Webpack",
-	"any-webpack.desc": "Any Webpack is a webpack configuration tool.",
+	"any-webpack.desc": "faster Webpack configuration tool.",
 	anydi: "Any DI",
-	"anydi.desc": "Any DI is a dependency injection tool.",
+	"anydi.desc": "dependency injection tool.",
 	"anydi.react": "Any DI React",
-	"anydi.react.desc": "Any DI React is a React integration of Any DI.",
+	"anydi.react.desc": "React integration of Any DI.",
 	elecpack: "Elecpack",
-	"elecpack.desc": "Elecpack is a Electron framework.",
+	"elecpack.desc": "Electron framework.",
 	"elecpack.rpc": "Elecpack RPC",
-	"elecpack.rpc.desc": "Elecpack RPC is a Electron RPC framework.",
+	"elecpack.rpc.desc": "Electron RPC framework.",
+	// 利用 x 快速构建 y 应用
+	"home.title.1": "Use",
+	"home.title.2": "fast build",
+	"home.title.3": "your application",
+	"home.go-doc": "Go to documentation",
+	"home.tech-stack": "Tech Stack",
 };
 
 declare type AppTranslations = typeof baseTranslation;
@@ -25,15 +31,20 @@ const translations = {
 	"zh-CN": {
 		doc: "文档",
 		"any-webpack": "Any Webpack",
-		"any-webpack.desc": "Any Webpack 是一个 webpack 配置工具。",
+		"any-webpack.desc": "快速 Webpack 配置工具。",
 		anydi: "Any DI",
-		"anydi.desc": "Any DI 是一个依赖注入工具。",
+		"anydi.desc": "依赖注入实现。",
 		"anydi.react": "Any DI React",
-		"anydi.react.desc": "Any DI React 是 Any DI 的 React 集成。",
+		"anydi.react.desc": "Any DI 的 React 集成。",
 		elecpack: "Elecpack",
-		"elecpack.desc": "Elecpack 是一个 Electron 开发框架。",
+		"elecpack.desc": "Electron 开发框架。",
 		"elecpack.rpc": "Elecpack RPC",
-		"elecpack.rpc.desc": "Elecpack RPC 是一个 Electron RPC 框架",
+		"elecpack.rpc.desc": "Electron RPC 框架",
+		"home.title.1": "利用",
+		"home.title.2": "快速构建",
+		"home.title.3": "你的应用",
+		"home.go-doc": "查看文档",
+		"home.tech-stack": "技术栈",
 	},
 };
 

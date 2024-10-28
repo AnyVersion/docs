@@ -1,4 +1,4 @@
-import type {Metadata} from 'next/types';
+import type { Metadata } from "next/types";
 import * as process from "node:process";
 
 export function createMetadata(override: Metadata): Metadata {

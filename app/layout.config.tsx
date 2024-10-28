@@ -1,8 +1,8 @@
-import type {BaseLayoutProps} from "fumadocs-ui/layouts/shared";
-import {Book, Layout,} from 'lucide-react';
-import Image from 'next/image';
-import Preview from '@/public/banner.png';
-import {buildTr} from "@/lib/i18n-locales";
+import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
+import { Book, Layout } from "lucide-react";
+import Image from "next/image";
+import Preview from "@/public/banner.png";
+import { buildTr } from "@/lib/i18n-locales";
 
 export function getBaseOptions(lang: string): BaseLayoutProps {
 	const $tr = buildTr(lang);

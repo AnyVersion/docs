@@ -1,8 +1,8 @@
-import type {ReactNode} from "react";
-import {source} from "@/lib/source";
-import {DocsLayout} from "fumadocs-ui/layouts/docs";
-import {getBaseOptions} from "@/app/layout.config";
-import {Slot} from "@radix-ui/react-slot";
+import type { ReactNode } from "react";
+import { source } from "@/lib/source";
+import { DocsLayout } from "fumadocs-ui/layouts/docs";
+import { getBaseOptions } from "@/app/layout.config";
+import { Slot } from "@radix-ui/react-slot";
 
 export default async function Layout({
 	params,

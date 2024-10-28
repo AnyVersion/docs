@@ -1,10 +1,10 @@
 import "./global.css";
-import {RootProvider} from "fumadocs-ui/provider";
-import {Inter} from "next/font/google";
-import type {PropsWithChildren} from "react";
-import {I18nProvider} from "fumadocs-ui/i18n";
-import {i18nConfig} from "@/lib/i18n-locales";
-import {baseUrl, createMetadata} from "@/lib/metadata";
+import { RootProvider } from "fumadocs-ui/provider";
+import { Inter } from "next/font/google";
+import type { PropsWithChildren } from "react";
+import { I18nProvider } from "fumadocs-ui/i18n";
+import { i18nConfig } from "@/lib/i18n-locales";
+import { baseUrl, createMetadata } from "@/lib/metadata";
 
 const inter = Inter({
 	subsets: ["latin"],
