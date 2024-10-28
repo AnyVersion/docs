@@ -42,7 +42,7 @@ const translations = {
 		"elecpack.rpc.desc": "Electron RPC 框架",
 		"home.title.1": "利用",
 		"home.title.2": "快速构建",
-		"home.title.3": "你的应用",
+		"home.title.3": "应用",
 		"home.go-doc": "查看文档",
 		"home.tech-stack": "技术栈",
 	},
